@@ -89,7 +89,8 @@ endfunction
 python << EOF
 import os
 sshTty = os.getenv("SSH_TTY")
-if sshTty:
+sty = os.getenv("STY")
+if sshTty or sty:
     cmd1 = "nnoremap yy :call PassLineToNc()<cr>"
     cmd2 = "nnoremap Y :call PassLineToNc()<cr>"
     cmd3 = "vnoremap y :call PassSelection()<cr>"
