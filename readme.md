@@ -12,7 +12,7 @@ This is a vim plugin for syncing clipboard content when it's running in a ssh se
 
 * A plugin manager is recommended, e.g. Vundle. If you have vundle installed:
     * Add one line in your .vimrc: `Plugin 'kindlychung/sysclip'`, and save
-    * In vim, execute `:PluginInstall` command
+    * Restart vim, then execute `:PluginInstall` command
 
 * You need to install a plist file for forwarding text to pbcopy, for this purpose do as instructed below:
     * `cd ~/.vim/bundle/sysclip`
