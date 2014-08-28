@@ -22,8 +22,10 @@ This is a vim plugin for syncing clipboard content when it's running in a ssh se
 * Next configure ssh for port forwarding, add the following content in your `.ssh/config` (if non-existent, create it), replace `hostname` with the hostname of your ssh server :
 
 
+<pre>
     Host hostname
       RemoteForward 2224 localhost:2224
+</pre>
 
 
 # Change log
